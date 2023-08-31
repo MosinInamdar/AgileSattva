@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import OfferingSlide from './OfferingSlide'
 import { client } from '../../client'
-
-import 'react-slideshow-image/dist/styles.css'
-import { Slide } from 'react-slideshow-image'
-
+import Navbar from '../../components/Header/Navbar'
+import Footer from '../../components/Footer/Footer'
 
 
 const Offerings = () => {
@@ -52,12 +50,14 @@ const Offerings = () => {
 
   return (
     <div className='Offerings'>
+      <Navbar/>
         {OfferingsSlides.map((item) => {
-          const { id, slideTitle, slideBg } = item
+          const { id, slideTitle, slideBg, slideDescription } = item
           return (
-            <OfferingSlide key={id} slideTitle={slideTitle} slideBg={slideBg} />
+            <OfferingSlide key={id} slideTitle={slideTitle} slideBg={slideBg} slideDescription={slideDescription}/>
           )
         })}
+        <Footer/>
     </div>
 
   )

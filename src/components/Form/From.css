@@ -1,0 +1,43 @@
+/* App.css */
+.form-container {
+    text-align: left; 
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+  
+  form {
+    display: inline-block;
+  }
+  
+  label {
+    display: block;
+    margin : 11px 0;
+    padding: 0 11px;
+    margin-bottom: 0.5rem;
+
+    
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #c4c5c6;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  

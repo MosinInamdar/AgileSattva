@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { client } from '../../client'
 import AboutSlide from './AboutSlide'
+import Navbar from '../../components/Header/Navbar'
+import Footer from '../../components/Footer/Footer'
 
 
 const About = () => {
@@ -46,15 +48,14 @@ const About = () => {
 
   return (
     <div className='about-container'>
-      <h1>FOUNDERS</h1>
-      <div className='about'>
+      <Navbar/>
       {AboutSlides.map((item) => {
-        const { id, slideTitle, slideBg } = item
+        const { id, slideTitle, slideBg, slideDescription } = item
         return (
-          <AboutSlide key={id} slideTitle={slideTitle} slideBg={slideBg} />
+          <AboutSlide key={id} slideTitle={slideTitle} slideBg={slideBg} slideDescription={slideDescription}/>
         )
       })}
-      </div> 
+      <Footer/>
     </div>
   )
 }

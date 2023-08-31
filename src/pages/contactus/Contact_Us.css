@@ -1,0 +1,18 @@
+.contact-container{
+    display: inline;
+
+}
+
+
+h1{
+    padding: 50px 0;
+    background: #f9b418;
+    margin: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: 'Oxygen', sans-serif;
+    line-height: 1.2;
+    text-rendering: optimizeLegibility;
+    font-weight: 500;
+}
